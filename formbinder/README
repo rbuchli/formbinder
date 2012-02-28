@@ -1,0 +1,42 @@
+= FormBinder Add-on =
+
+== Usage of the add-on ==
+
+This is a pure server side add-on for Vaadin. Most commonly you will 
+use ViewBoundForm from this add-on. It extends
+the default Form in Vaadin. You will also need to build a view (of 
+type ComponentContainer) for your form and then pass it as a constructor 
+parameter or via setContent method. See class documenation (javadoc) for
+ViewBoundForm for more information.
+
+ViewBoundForm then uses PreCreatedFieldsHelper to find a suitable field
+from you view class that it binds to related Property. Most commonly 
+a naming convention (propertyId + "Field") is used for mapping, but also
+@PropertyId annotation can be used. Downside with the annotation is that
+the current version of Vaadin Visual Designer stripts them away.
+
+The PreCreatedFiedlsHelper is usable as a standalone helper aswell. You
+may use it e.g. if you need to use another form extension instead (e.g.
+BeanValidationForm).
+
+Tests in FormBinderDemoApplication should be 
+
+== Developing and building ==
+
+Project sources are hosted in github.com.
+
+Issue following maven build to package project to a vaadin add-on package:
+mvn install
+
+During development one can easily launch embedded jetty server for 
+development by running the main method from TestServlet class that runs.
+
+TODO Project uses some Selenium2 tests against the example application 
+with FirefoxDriver. They are automatically run during build.
+
+== Building demo app ==
+
+There are no cool demos available ATM. Test packages can be packaged into
+servlet3 war with a sources from src/test package.
+ 
+ 
