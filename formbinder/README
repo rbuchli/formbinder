@@ -12,7 +12,7 @@ ViewBoundForm for more information.
 ViewBoundForm then uses PreCreatedFieldsHelper to find a suitable field
 from you view class that it binds to related Property. Most commonly 
 a naming convention (propertyId + "Field") is used for mapping, but also
-@PropertyId annotation can be used. Downside with the annotation is that
+@PropertyId annotation can be used. A known problem with the annotation is that
 the current version of Vaadin Visual Designer stripts them away.
 
 The PreCreatedFiedlsHelper is usable as a standalone helper aswell. You
@@ -28,8 +28,8 @@ Project sources are hosted in github.com.
 Issue following maven build to package project to a vaadin add-on package:
 mvn install
 
-During development one can easily launch embedded jetty server for 
-development by running the main method from TestServlet class that runs.
+During development one can easily launch examples using embedded jetty 
+server by running the main method from the  class that runs.
 
 Project uses some Selenium2 tests against the example application 
 with FirefoxDriver. They are automatically run during build.
