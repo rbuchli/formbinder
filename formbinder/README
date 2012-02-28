@@ -31,7 +31,7 @@ mvn install
 During development one can easily launch embedded jetty server for 
 development by running the main method from TestServlet class that runs.
 
-TODO Project uses some Selenium2 tests against the example application 
+Project uses some Selenium2 tests against the example application 
 with FirefoxDriver. They are automatically run during build.
 
 == Building demo app ==
