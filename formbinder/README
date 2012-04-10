@@ -19,19 +19,20 @@ The PreCreatedFiedlsHelper is usable as a standalone helper aswell. You
 may use it e.g. if you need to use another form extension instead (e.g.
 BeanValidationForm).
 
-Tests in FormBinderDemoApplication should be 
+Tests in FormBinderDemoApplication work as example codes as well.
 
 == Developing and building ==
 
-Project sources are hosted in github.com.
+Project sources are hosted in http://code.google.com/p/formbinder/
 
 Issue following maven build to package project to a vaadin add-on package:
 mvn install
 
 During development one can easily launch examples using embedded jetty 
-server by running the main method from the  class that runs.
+server by running the main method from class 
+org.vaadin.addon.formbinder.test.FormBinderDemoApplication.
 
-Project uses some Selenium2 tests against the example application 
+Project uses some Selenium2 integration tests against the example application 
 with FirefoxDriver. They are automatically run during build.
 
 == Building demo app ==
